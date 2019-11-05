@@ -106,10 +106,10 @@ class EmailSender {
         // reach for the DNS name (DNS = Domain Name System)
         properties.setProperty("mail.smtp.host", "smtp.gmail.com");
 
-
         properties.put("mail.smtp.socketFactory.port", "587");
 
-        //
+        // Secure Sockets Layer (SSL) is a standard security technology for
+        // establishing an encrypted link between a server and a client
         properties.put("mail.smtp.Factor.class", "javax.net.ssl.SSLSocketFactory");
 
         // STARTTLS is an email protocol command that tells an email server that
